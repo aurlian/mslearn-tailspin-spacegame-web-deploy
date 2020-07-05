@@ -224,7 +224,7 @@ stages:
     condition: |
       and
       (
-        succedded('DBAVerificationScript'),
+        succeeded('DBAVerificationScript'),
         in(dependencies.DBAVerificationApply.result, 'Succeeded', 'Skipped')
       )
     jobs:
