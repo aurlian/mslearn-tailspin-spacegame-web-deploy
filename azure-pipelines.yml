@@ -225,7 +225,7 @@ stages:
       and
       (
         succedded('DBAVerificationScript'),
-        in(dependencies.DBAVerificationApply.result, 'Succedded', 'Skipped')
+        in(dependencies.DBAVerificationApply.result, 'Succeeded', 'Skipped')
       )
     jobs:
       - deployment: Deploy
